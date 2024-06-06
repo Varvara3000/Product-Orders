@@ -54,6 +54,7 @@ export class AppComponent {
         return false
       }
     })
+
     if(findProduct && findProduct?.amount >1){
       findProduct.amount = findProduct?.amount - 1;
       findProduct.total = findProduct.amount * findProduct.price;
