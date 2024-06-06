@@ -1,0 +1,22 @@
+<div class="footer">
+  <div *ngIf="chosenProduct !== undefined && chosenProduct !== null" class="footer-items">
+    <div class="footer-item"
+      (click)="deleteProduct()"
+    >
+    <div class="footer-icon delete" [inlineSVG]="'./assets/delete.svg'"></div>
+    <div class="footer-text">Видалити</div>
+    </div>
+    <div class="footer-item"
+    (click)="decreaseProduct()"
+    >
+      <div class="footer-icon" [inlineSVG]="'./assets/minus.svg'"></div>
+      <div class="footer-text">Зменшити кількість</div>
+    </div>
+    <div class="footer-item"
+    (click)="addProduct()"
+    >
+      <div class="footer-icon" [inlineSVG]="'./assets/plus.svg'"></div>
+      <div class="footer-text">Збільшити кількість</div>
+    </div>
+  </div>
+</div>

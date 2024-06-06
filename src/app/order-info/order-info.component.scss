@@ -1,0 +1,33 @@
+.order-info-wrapper{
+  padding-right: 10px;
+}
+.order-info{
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0 4px 4px 0 #00000040;
+border-radius: 10px;
+  align-items: center;
+  padding: 9px;
+  background-color: #fff;
+  margin-bottom:10px ;
+  &-left,.order-info-right{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  &-title{
+    font-size: 20px;
+    line-height: 30px;
+    color: #02B4B6;
+  }
+  &-subtitle{
+    font-size: 14px;
+    line-height: 18px;
+    color: #9E9E9E;
+  }
+  &-total,.order-info-sum{
+    font-size: 20px;
+    line-height: 30px;
+    color: #666666;
+  }
+}

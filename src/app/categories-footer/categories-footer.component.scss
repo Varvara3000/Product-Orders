@@ -1,0 +1,25 @@
+.footer{
+  background-color: #fff;
+  border-bottom: 1px solid #D7D7D7;
+  padding: 10px 16px;
+  &-item{
+    display: flex;
+   align-items: center;
+    gap: 8px;
+ justify-content: end;
+  }
+  &-text{
+    font-size: 16px;
+    line-height: 16px;
+    color: #666666;
+  }
+  &-icon{
+    ::ng-deep svg{
+      width: 40px;
+      height: 40px;
+      path{
+        fill:#02B4B6 ;
+      }
+    }
+  }
+}

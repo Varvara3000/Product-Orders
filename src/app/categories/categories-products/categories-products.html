@@ -1,0 +1,14 @@
+<div class="categories-items">
+<div class="categories-item"
+  (click) ="chosedProduct(orderCategoriesItem)"
+  *ngFor="let orderCategoriesItem of orderCategoriesItems"
+>
+  <div class="title">
+    {{orderCategoriesItem.title}}
+  </div>
+  <div class="price">
+    {{orderCategoriesItem.price}}&nbsp;uah
+  </div>
+  </div>
+</div>
+

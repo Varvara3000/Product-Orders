@@ -1,0 +1,11 @@
+<div class="categories">
+<div class="categories-menu">
+  <div class="categories-icon icon-left" [inlineSVG]="'./assets/chevron-left.svg'" ></div>
+  <button class="categories-button"
+    (click)="choseCategory(category)"
+    [ngClass]="chosenCategory?.name === category.name ? 'button_active':''"
+  *ngFor = "let category of categories"
+  >{{category.name}}</button>
+  <div class="categories-icon icon-right" [inlineSVG]="'./assets/chevron-right.svg'" ></div>
+</div>
+</div>

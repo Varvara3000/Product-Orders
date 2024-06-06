@@ -1,0 +1,25 @@
+.categories-items{
+  display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 10px;
+  padding: 6px;
+  height: calc(100vh - 251px);
+}
+.categories-item{
+  background-color: #fff;
+  border-radius: 10px;
+  border: 1px solid #D7D7D7;
+  padding: 8px;
+}
+.title{
+  font-size: 16px;
+  line-height: 16px;
+  color: #666666;
+  margin-bottom: 53px;
+}
+.price{
+  font-size: 14px;
+  line-height: 18px;
+  color: #9E9E9E;
+  text-align: right;
+}

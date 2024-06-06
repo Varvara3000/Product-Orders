@@ -1,0 +1,43 @@
+.footer{
+  background-color: #fff;
+  margin-top: 50px;
+  border-bottom: 1px solid #D7D7D7;
+  padding: 10px;
+  &-items{
+display: flex;
+   justify-content: space-between;
+    align-items: center;
+
+  }
+  &-item{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    cursor: pointer;
+  }
+  &-text{
+    font-size: 16px;
+    line-height: 16px;
+    color:  #666666;
+  }
+  &-icon{
+
+    ::ng-deep svg{
+      width: 40px;
+      height: 40px;
+      path{
+        fill: #02B4B6 ;
+      }
+    }
+  }
+}
+.delete{
+
+  ::ng-deep svg{
+    width: 32px;
+    height: 40px;
+    path{
+      fill: #EE4B66;
+    }
+  }
+}
