@@ -10,6 +10,7 @@ import { CategoriesFooterComponent } from './categories-footer/categories-footer
 import { Product } from '../interface/category';
 import { OrderProduct } from '../interface/order-product';
 import { NgIf } from '@angular/common';
+import {OrderListComponent} from "./order-list/order-list.component";
 
 @Component({
   selector: 'app-root',
@@ -24,6 +25,7 @@ import { NgIf } from '@angular/common';
     OrderProductsFooterComponent,
     CategoriesFooterComponent,
     NgIf,
+    OrderListComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
