@@ -10,6 +10,7 @@ border-radius: 10px;
   display: flex;
   flex-direction: column;
   gap: 20px;
+  cursor:default;
 }
 .order-list-date{
   color: #9E9E9E;
@@ -29,4 +30,8 @@ color: #00827F;
   font-size: 18px;
   width: 102px;
   align-self: end;
+cursor:pointer;
+}
+.order-list-subtitle:hover{
+  box-shadow: -1px 0px 10px 5px  rgba(87, 231, 237, 0.5);
 }

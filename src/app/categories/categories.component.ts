@@ -1,4 +1,4 @@
-import {Component, EventEmitter, Output} from '@angular/core';
+import {Component, EventEmitter, OnInit, Output} from '@angular/core';
 import { InlineSVGModule } from 'ng-inline-svg-2';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import {NgClass, NgForOf} from "@angular/common";
@@ -11,7 +11,7 @@ import {Category} from "../../interface/category";
   templateUrl: './categories.component.html',
   styleUrl: './categories.component.scss',
 })
-export class CategoriesComponent {
+export class CategoriesComponent implements OnInit{
   categories = [
     {
       name: 'Солодощі',
@@ -77,6 +77,10 @@ export class CategoriesComponent {
   ];
   chosenCategory:Category
   @Output() selectCategoryEmitter = new  EventEmitter()
+  ngOnInit(){
+    this.chosenCategory = this.categories[0];
+    this.selectCategoryEmitter.emit(this.categories[0].products)
+  }
   choseCategory(category:Category){
     this.chosenCategory = category;
     this.selectCategoryEmitter.emit(category.products)
